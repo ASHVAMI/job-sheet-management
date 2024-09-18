@@ -1,0 +1,35 @@
+{
+    "name": "job-sheet-management",
+    "version": "1.0.0",
+    "description": "Job Sheet Management System with React frontend and Node.js backend",
+    "main": "backend/server.js",
+    "scripts": {
+      "start": "concurrently \"npm run server\" \"npm run client\"",
+      "server": "cd backend && nodemon server.js",
+      "client": "cd frontend && npm start",
+      "build": "cd frontend && npm run build"
+    },
+    "author": "Your Name",
+    "license": "ISC",
+    "dependencies": {
+      "axios": "^0.21.1",  // Frontend
+      "bcryptjs": "^2.4.3",  // Backend for password hashing
+      "concurrently": "^6.0.0",  // To run frontend and backend together
+      "cors": "^2.8.5",  // Backend to allow cross-origin requests
+      "dotenv": "^10.0.0",  // Backend to load environment variables
+      "express": "^4.17.1",  // Backend framework
+      "jsonwebtoken": "^8.5.1",  // Backend for JWT authentication
+      "mongoose": "^5.11.15",  // Backend for MongoDB interaction
+      "morgan": "^1.10.0",  // Backend for logging requests
+      "react": "^17.0.2",  // Frontend React
+      "react-dom": "^17.0.2",  // Frontend React DOM
+      "react-router-dom": "^5.2.0",  // Frontend routing library
+      "redux": "^4.1.0",  // Frontend state management
+      "redux-thunk": "^2.3.0",  // Middleware for async actions in Redux
+      "tailwindcss": "^2.2.7"  // Frontend for styling
+    },
+    "devDependencies": {
+      "nodemon": "^2.0.7"  // Backend dev tool for auto-restarting the server
+    }
+  }
+  
